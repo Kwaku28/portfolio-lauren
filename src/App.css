@@ -1,3 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&family=Montserrat:wght@200;400&display=swap");@import url("https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&family=Montserrat:wght@200;400&display=swap");
+
+:root {
+  --wc-orange: #ffba00;
+  --primary-color: #20201d;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
 canvas {
   width: 100%;
   height: 100%;
@@ -15,31 +26,125 @@ canvas {
   width: 6%;
   height: 60vh;
   overflow: auto;
-  background: #20201d;
+  background: var(--primary-color);
   border-radius: 5px;
 }
 
 .navbar-nav {
   align-items: center;
-  gap: 2rem;
+  gap: 1.6rem;
 }
 
 .navbar-nav a {
   color: #c9c7b6;
-  font-size: 0.8em;
+  font-size: 0.7em;
+  font-family: "Montserrat", sans-serif;
   border-bottom: 1px solid #c9c7b6;
+  transition: all 0.5s ease;
+  text-align: center;
+}
+
+.navbar-nav a:hover {
+  color: var(--wc-orange);
+}
+
+.nav-link ion-icon {
+  font-size: 2em;
 }
 
 .profile {
   position: absolute;
   top: 2rem;
   left: 11rem;
-  width: 40%;
+  width: 35%;
   height: 90vh;
-  background: #20201d;
+  background: var(--primary-color);
   border-radius: 5px;
   display: flex;
   flex-direction: column;
   align-items: center;
   overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  -webkit-mask-image: radial-gradient(
+    110% 50% at bottom,
+    transparent 50%,
+    #fff 51%
+  );
+  mask-image: radial-gradient(110% 50% at bottom, transparent 50%, #fff 51%);
+}
+
+.profile div {
+  position: relative;
+  top: -8rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.logo {
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+.profile h1 {
+  color: #eee;
+  font-size: 1.8em;
+  font-family: 'Ibarra Real Nova', serif;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+}
+
+.social {
+  display: flex;
+  gap: 1.5rem;
+  margin-left: -3rem;
+}
+
+.social li {
+  list-style: none;
+}
+
+.social li a {
+  color: #eee;
+  font-size: 1.5em;
+  transition: all 0.5s ease;
+}
+
+.social li a:hover {
+  color: var(--wc-orange);
+}
+
+.main-container {
+  position: absolute;
+  top: 3rem;
+  left: 47%;
+  width: 47%;
+  height: 85vh;
+  padding: 2rem;
+  background: var(--primary-color);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+  overflow-y: scroll
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(rgba(43, 43, 43), rgb(182, 164, 62));
+  border-radius: 5px;
 }
