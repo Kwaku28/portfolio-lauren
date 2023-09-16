@@ -1,3 +1,6 @@
+import video from "./assets/background-video.mp4";
+// import { FaXTwitter } from "react-icons/fa";
+// import { GrSend } from "react-icons/gr";
 import "./App.css";
 
 function App() {
@@ -164,53 +167,96 @@ function App() {
         <div className="container" id="navbarNav">
           <div className="navbar-nav">
             <a className="nav-link" href="#">
+              <ion-icon name="person-outline"></ion-icon>
+              <br />
               ABOUT
             </a>
             <a className="nav-link" href="#">
+              <ion-icon name="reader-outline"></ion-icon> <br />
               RESUME
             </a>
             <a className="nav-link" href="#">
+              <ion-icon name="laptop-outline"></ion-icon> <br />
               PROJECTS
             </a>
             <a className="nav-link" href="#">
+              <ion-icon name="send-sharp"></ion-icon> <br />
               CONTACT
             </a>
           </div>
         </div>
       </nav>
       <div className="profile">
-        <img
-          src="/lauren.png"
-          alt="logo"
-          style={{ cursor: "pointer", width: "10rem" }}
-        />
-        <h1>Lawrence Amoafo</h1>
-        <ul className="social">
-          <li>
-            <a href="https://github.com/Kwaku28">
-              <ion-icon name="logo-github"></ion-icon>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/lawrence-amoafo-appoh/">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-          </li>
-          <li>
-            <a href="https://twitter.com/lawrence_amoafo">
-              <ion-icon name="logo-twitter"></ion-icon>
-            </a>
-          </li>
-          <li>
-            <a
-              href="mailto:rekenburg777@gmail.com"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <ion-icon name="mail-outline"></ion-icon>
-            </a>
-          </li>
-        </ul>
+        <video src={video} autoPlay loop muted />
+        <div>
+          <img
+            src="/lauren.png"
+            alt="logo"
+            style={{ cursor: "pointer", width: "10rem", height: "10rem" }}
+            className="logo"
+          />
+          <h1>Lawrence Amoafo</h1>
+          <h2>
+            <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=15&pause=500&color=ffba00&width=180&height=40&center=true&lines=Front-End+Developer;Back-End+Developer;Full-Stack+Developer;Freelancer" />
+          </h2>
+          <ul className="social">
+            <li>
+              <a
+                href="https://github.com/Kwaku28"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/lawrence-amoafo-appoh/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://twitter.com/lawrence_amoafo"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a
+                href="mailto:rekenburg777@gmail.com"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <ion-icon name="mail-outline"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div className="main-container">
+        <h2>
+          Certainly! Heres an edited summary for a Full Stack Web Developer,
+          including two soft skills: Experienced Full Stack Web Developer with a
+          strong foundation in JavaScript, Ruby on Rails, React, and frontend
+          technologies. I possess not only technical proficiency but also
+          exceptional soft skills, including effective communication and
+          teamwork. My passion for creating dynamic and user-friendly web
+          applications is complemented by my ability to collaborate seamlessly
+          with cross-functional teams and clients, ensuring that project goals
+          align with user needs. With expertise in HTML and CSS, I meticulously
+          craft intuitive and visually appealing interfaces. My problem-solving
+          mindset, coupled with my dedication to continuous learning, enables me
+          to tackle complex challenges and deliver scalable web solutions that
+          exceed expectations. I thrive in environments that demand adaptability
+          and innovation, making me a valuable asset in the ever-evolving world
+          of web development.
+        </h2>
       </div>
     </>
   );
