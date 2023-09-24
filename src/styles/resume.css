@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&family=Montserrat:wght@200;400&display=swap");
+
+.resume-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
+  color: var(--primary-text);
+}
+
+.resume {
+  width: 100%;
+}
+
+.resume-container h2 {
+  font-family: "Ibarra Real Nova", serif;
+  font-size: 1.5em;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  width: 100%;
+  padding: 1rem;
+  position: relative;
+  z-index: 2;
+}
+
+.resume-container h2 span {
+  color: var(--wc-orange);
+}
+
+.resume-container .circle {
+  position: relative;
+  top: 3.7rem;
+  left: 0.6rem;
+  width: 40px;
+  height: 40px;
+  opacity: 0.4;
+  z-index: 1;
+}
+
+.resume-container .circle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  background: linear-gradient(45deg, var(--wc-orange), var(--primary-color));
+  z-index: -1;
+}
+
+.resume-body,
+.skills-body {
+  display: flex;
+  width: 100%;
+  border-top: 1px solid transparent;
+  border-image: var(--horizontal-color);
+  border-image-slice: 1;
+  padding-bottom: 2rem;
+}
+
+.resume-body-left,
+.skills-body-left {
+  width: 50%;
+  padding: 1rem;
+  border-right: 1px solid transparent;
+  border-image: var(--vertical-color);
+  border-image-slice: 1;
+}
+
+.resume-body-right,
+.skills-body-right {
+  padding: 1rem;
+}
+
+.round {
+  width: 25%;
+  height: 55%;
+  border: 2px solid var(--wc-orange);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.resume-body-head {
+  height: 20%;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  border-bottom: 1px solid transparent;
+  border-image: var(--horizontal-color);
+  border-image-slice: 1;
+}
+
+.resume-container h3 {
+  font-family: "Ibarra Real Nova", serif;
+  font-weight: 800;
+  font-size: 1.2em;
+}
+
+.resume-body-left-education,
+.resume-body-right-experience {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1rem;
+  border-bottom: 1px solid transparent;
+  border-image: var(--horizontal-color);
+  border-image-slice: 1;
+}
+
+.resume-body-left-education:nth-child(4),
+.resume-body-right-experience:nth-child(4) {
+  border-bottom: none
+}
+
+.resume-body-left-education h4,
+.resume-body-right-experience h4 {
+  font-family: "Ibarra Real Nova", serif;
+  font-size: 1.2em;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.resume-body-left-education p,
+.resume-body-right-experience p,
+.tech p,
+.knowledge-list p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9em;
+  color: var(--secondary-text);
+  padding-top: 0.3rem;
+}
+
+.date {
+  border: 1px solid var(--box-color);
+  width: fit-content;
+  padding: 0.2rem 0.5rem;
+}
+
+.skills-body-head {
+  height: 18vh;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  border-bottom: 1px solid transparent;
+  border-image: var(--horizontal-color);
+  border-image-slice: 1;
+}
+
+.skills-body-right .skills-body-head .round {
+  width: 4.5vw;
+  height: 55%;
+}
+
+.technologies {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 1rem;
+  gap: 1.5rem;
+}
+
+.tech {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.tech p {
+  width: 6rem;
+  text-align: center;
+}
+
+.knowledge {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1rem;
+}
+
+.knowledge-list {
+  height: 8vh;
+  display: flex;
+  gap: 0.2rem;
+}
+
+.knowledge-list .react-icons {
+  font-size: 2em;
+}

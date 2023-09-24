@@ -1,4 +1,11 @@
-import "./App.css";
+import { NavLink, Routes, Route } from "react-router-dom";
+import video from "./assets/background-video.mp4";
+import Project from "./components/project";
+import Contact from "./components/contact";
+import About from "./components/about";
+import Resume from "./components/resume";
+import AnimateCursor from "./components/animatedCursor";
+import "./styles/App.css";
 
 function App() {
   const c = document.createElement("canvas");
@@ -160,57 +167,97 @@ function App() {
 
   return (
     <>
+      <AnimateCursor />
       <nav className="navbar">
         <div className="container" id="navbarNav">
-          <div className="navbar-nav">
-            <a className="nav-link" href="#">
-              ABOUT
-            </a>
-            <a className="nav-link" href="#">
-              RESUME
-            </a>
-            <a className="nav-link" href="#">
-              PROJECTS
-            </a>
-            <a className="nav-link" href="#">
-              CONTACT
-            </a>
-          </div>
+          <ul className="navbar-nav">
+            <li className="nav-link">
+              <NavLink to="/" className="nav-buttons">
+                <ion-icon name="person-outline"></ion-icon>
+                ABOUT
+              </NavLink>
+            </li>
+            <li className="nav-link">
+              <NavLink to="/resume" className="nav-buttons">
+                <ion-icon name="reader-outline"></ion-icon>
+                RESUME
+              </NavLink>
+            </li>
+            <li className="nav-link">
+              <NavLink to="/projects" className="nav-buttons">
+                <ion-icon name="laptop-outline"></ion-icon>
+                PROJECTS
+              </NavLink>
+            </li>
+            <li className="nav-link">
+              <NavLink to="/contact" className="nav-buttons">
+                <ion-icon name="send-sharp"></ion-icon>
+                CONTACT
+              </NavLink>
+            </li>
+          </ul>
         </div>
       </nav>
       <div className="profile">
-        <img
-          src="/lauren.png"
-          alt="logo"
-          style={{ cursor: "pointer", width: "10rem" }}
-        />
-        <h1>Lawrence Amoafo</h1>
-        <ul className="social">
-          <li>
-            <a href="https://github.com/Kwaku28">
-              <ion-icon name="logo-github"></ion-icon>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/lawrence-amoafo-appoh/">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-          </li>
-          <li>
-            <a href="https://twitter.com/lawrence_amoafo">
-              <ion-icon name="logo-twitter"></ion-icon>
-            </a>
-          </li>
-          <li>
-            <a
-              href="mailto:rekenburg777@gmail.com"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <ion-icon name="mail-outline"></ion-icon>
-            </a>
-          </li>
-        </ul>
+        <video src={video} autoPlay loop muted />
+        <div>
+          <img
+            src="/lauren.png"
+            alt="logo"
+            style={{ width: "10rem", height: "10rem" }}
+            className="logo"
+          />
+          <h1>Lawrence Amoafo</h1>
+          <h2>
+            <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=15&pause=500&color=ffba00&width=180&height=40&center=true&lines=Front-End+Developer;Back-End+Developer;Full-Stack+Developer;Freelancer" />
+          </h2>
+          <ul className="social">
+            <li>
+              <a
+                href="https://github.com/Kwaku28"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/lawrence-amoafo-appoh/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://twitter.com/lawrence_amoafo"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a
+                href="mailto:rekenburg777@gmail.com"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <ion-icon name="mail-outline"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div className="main-container">
+      <Routes>
+        <Route path="/" element={<About />} />
+        <Route path="resume" element={<Resume />} />
+        <Route path="projects" element={<Project />} />
+        <Route path="contact" element={<Contact />} />
+      </Routes>
       </div>
     </>
   );
