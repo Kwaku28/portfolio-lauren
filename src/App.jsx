@@ -1,7 +1,11 @@
+import { NavLink, Routes, Route } from "react-router-dom";
 import video from "./assets/background-video.mp4";
-// import { FaXTwitter } from "react-icons/fa";
-// import { GrSend } from "react-icons/gr";
-import "./App.css";
+import Project from "./components/project";
+import Contact from "./components/contact";
+import About from "./components/about";
+import Resume from "./components/resume";
+import AnimateCursor from "./components/animatedCursor";
+import "./styles/App.css";
 
 function App() {
   const c = document.createElement("canvas");
@@ -163,27 +167,35 @@ function App() {
 
   return (
     <>
+      <AnimateCursor />
       <nav className="navbar">
         <div className="container" id="navbarNav">
-          <div className="navbar-nav">
-            <a className="nav-link" href="#">
-              <ion-icon name="person-outline"></ion-icon>
-              <br />
-              ABOUT
-            </a>
-            <a className="nav-link" href="#">
-              <ion-icon name="reader-outline"></ion-icon> <br />
-              RESUME
-            </a>
-            <a className="nav-link" href="#">
-              <ion-icon name="laptop-outline"></ion-icon> <br />
-              PROJECTS
-            </a>
-            <a className="nav-link" href="#">
-              <ion-icon name="send-sharp"></ion-icon> <br />
-              CONTACT
-            </a>
-          </div>
+          <ul className="navbar-nav">
+            <li className="nav-link">
+              <NavLink to="/" className="nav-buttons">
+                <ion-icon name="person-outline"></ion-icon>
+                ABOUT
+              </NavLink>
+            </li>
+            <li className="nav-link">
+              <NavLink to="/resume" className="nav-buttons">
+                <ion-icon name="reader-outline"></ion-icon>
+                RESUME
+              </NavLink>
+            </li>
+            <li className="nav-link">
+              <NavLink to="/projects" className="nav-buttons">
+                <ion-icon name="laptop-outline"></ion-icon>
+                PROJECTS
+              </NavLink>
+            </li>
+            <li className="nav-link">
+              <NavLink to="/contact" className="nav-buttons">
+                <ion-icon name="send-sharp"></ion-icon>
+                CONTACT
+              </NavLink>
+            </li>
+          </ul>
         </div>
       </nav>
       <div className="profile">
@@ -192,7 +204,7 @@ function App() {
           <img
             src="/lauren.png"
             alt="logo"
-            style={{ cursor: "pointer", width: "10rem", height: "10rem" }}
+            style={{ width: "10rem", height: "10rem" }}
             className="logo"
           />
           <h1>Lawrence Amoafo</h1>
@@ -240,23 +252,12 @@ function App() {
         </div>
       </div>
       <div className="main-container">
-        <h2>
-          Certainly! Heres an edited summary for a Full Stack Web Developer,
-          including two soft skills: Experienced Full Stack Web Developer with a
-          strong foundation in JavaScript, Ruby on Rails, React, and frontend
-          technologies. I possess not only technical proficiency but also
-          exceptional soft skills, including effective communication and
-          teamwork. My passion for creating dynamic and user-friendly web
-          applications is complemented by my ability to collaborate seamlessly
-          with cross-functional teams and clients, ensuring that project goals
-          align with user needs. With expertise in HTML and CSS, I meticulously
-          craft intuitive and visually appealing interfaces. My problem-solving
-          mindset, coupled with my dedication to continuous learning, enables me
-          to tackle complex challenges and deliver scalable web solutions that
-          exceed expectations. I thrive in environments that demand adaptability
-          and innovation, making me a valuable asset in the ever-evolving world
-          of web development.
-        </h2>
+      <Routes>
+        <Route path="/" element={<About />} />
+        <Route path="resume" element={<Resume />} />
+        <Route path="projects" element={<Project />} />
+        <Route path="contact" element={<Contact />} />
+      </Routes>
       </div>
     </>
   );
