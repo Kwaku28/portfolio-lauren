@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&family=Montserrat:wght@200;400&display=swap");@import url("https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&family=Montserrat:wght@200;400&display=swap");
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
+  color: var(--primary-text);
+}
+
+.about-container h2 {
+  font-family: "Ibarra Real Nova", serif;
+  font-size: 1.5em;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  width: 100%;
+  border-bottom: 1px solid transparent;
+  border-image: var(--horizontal-color);
+  border-image-slice: 1;
+  padding: 1rem;
+  position: relative;
+  z-index: 2;
+}
+
+.about-container h2 span {
+  color: var(--wc-orange);
+}
+
+.circle {
+  position: relative;
+  top: 3.7rem;
+  left: 0.6rem;
+  width: 40px;
+  height: 40px;
+  opacity: 0.4;
+  z-index: 1;
+}
+
+.my_services .circle {
+  top: 4rem;
+  left: 0.65rem;
+}
+
+.fun_facts .circle {
+  top: 3.6rem;
+  left: 0.45rem;
+}
+
+.circle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  background: linear-gradient(45deg, var(--wc-orange), var(--primary-color));
+  z-index: -1;
+}
+
+.about-profile {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.85em;
+  line-height: 1.8em;
+  letter-spacing: 0.5px;
+  color: var(--secondary-text);
+}
+
+.my_services {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.my_services h3,
+.fun_facts h3 {
+  font-family: "Ibarra Real Nova", serif;
+  font-size: 1.5em;
+  font-weight: 800;
+  width: 100%;
+  padding-left: 1rem;
+  position: relative;
+  z-index: 2;
+}
+
+.my_services h3 span,
+.fun_facts h3 span {
+  color: var(--wc-orange);
+}
+
+.services {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-top: 1px solid transparent;
+  border-image: var(--horizontal-color);
+  border-image-slice: 1;
+}
+
+.service,
+.facts {
+  padding: 1rem;
+}
+
+.service:nth-child(1),
+.facts:nth-child(1),
+.facts:nth-child(2) {
+  border-right: 1px solid transparent;
+  border-image: var(--vertical-color);
+  border-image-slice: 1;
+}
+
+.service div {
+  width: 28%;
+  height: 35%;
+  border: 2px solid var(--wc-orange);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.service ion-icon {
+  font-size: 2.5em;
+  color: var(--wc-orange);
+}
+
+.react-icons {
+  font-size: 2.5em;
+  color: var(--wc-orange);
+}
+
+.service h4 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+  font-weight: 600;
+  margin-top: 1rem;
+  color: var(--primary-text);
+}
+
+.service p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.85em;
+  line-height: 1.8em;
+  letter-spacing: 0.5px;
+  color: var(--secondary-text);
+}
+
+.fun_facts {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-bottom: 3rem;
+}
+
+.fun_facts .services {
+  width: 100%;
+  height: 25vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+}
+
+.facts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.facts div {
+  width: 48%;
+  height: 60%;
+  border: 2px solid var(--wc-orange);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.facts h4 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8em;
+  font-weight: 600;
+  margin-top: 1rem;
+  color: var(--secondary-text);
+}
