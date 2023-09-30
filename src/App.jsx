@@ -200,17 +200,14 @@ function App() {
       </nav>
       <div className="profile">
         <video src={video} autoPlay loop muted />
-        <div>
-          <img
-            src="/lauren.png"
-            alt="logo"
-            style={{ width: "10rem", height: "10rem" }}
-            className="logo"
-          />
-          <h1>Lawrence Amoafo</h1>
-          <h2>
-            <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=15&pause=500&color=ffba00&width=180&height=40&center=true&lines=Front-End+Developer;Back-End+Developer;Full-Stack+Developer;Freelancer" />
-          </h2>
+        <div className="profile-intro">
+          <img src="/lauren.png" alt="logo" className="logo" />
+          <div className="intro">
+            <h1>Lawrence Amoafo</h1>
+            <h2>
+              <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=15&pause=500&color=ffba00&width=180&height=40&center=true&lines=Front-End+Developer;Back-End+Developer;Full-Stack+Developer;Freelancer" />
+            </h2>
+          </div>
           <ul className="social">
             <li>
               <a
@@ -252,12 +249,12 @@ function App() {
         </div>
       </div>
       <div className="main-container">
-      <Routes>
-        <Route path="/" element={<About />} />
-        <Route path="resume" element={<Resume />} />
-        <Route path="projects" element={<Project />} />
-        <Route path="contact" element={<Contact />} />
-      </Routes>
+        <Routes>
+          <Route path="/" element={<About />} />
+          <Route path="resume" element={<Resume />} />
+          <Route path="projects" element={<Project />} />
+          <Route path="contact" element={<Contact />} />
+        </Routes>
       </div>
     </>
   );
