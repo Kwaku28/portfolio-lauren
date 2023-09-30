@@ -37,8 +37,13 @@
   z-index: 1;
 }
 
+form {
+  padding: 1rem;
+  width: 100%;
+  background: transparent;
+}
+
 .form-floating {
-  width: 30vw;
   border: none;
   font-family: "Montserrat", sans-serif;
   font-size: 1em;
@@ -47,5 +52,4 @@
 .btn {
   background-color: var(--wc-orange);
   color: var(--primary-text);
-  /* border-color: var(--wc-orange); */
 }

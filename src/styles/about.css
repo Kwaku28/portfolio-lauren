@@ -187,3 +187,42 @@
   margin-top: 1rem;
   color: var(--secondary-text);
 }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .facts div {
+    width: 50%;
+    height: 35%;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .about-profile {
+    padding: 0 1rem
+  }
+
+  .service div {
+    width: 38%;
+    height: 35%;
+  }
+
+  .facts div {
+    width: 58%;
+    height: 50%;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-profile {
+    padding: 0 1rem
+  }
+
+  .service div {
+    width: 28%;
+    height: 25%;
+  }
+
+  .facts div {
+    width: 58%;
+    height: 45%;
+  }
+}

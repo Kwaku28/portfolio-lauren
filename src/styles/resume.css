@@ -72,6 +72,7 @@
 .resume-body-right,
 .skills-body-right {
   padding: 1rem;
+  width: 50%;
 }
 
 .round {
@@ -112,7 +113,7 @@
 
 .resume-body-left-education:nth-child(4),
 .resume-body-right-experience:nth-child(4) {
-  border-bottom: none
+  border-bottom: none;
 }
 
 .resume-body-left-education h4,
@@ -149,13 +150,14 @@
   border-image-slice: 1;
 }
 
-.skills-body-right .skills-body-head .round {
+/* .skills-body-right .skills-body-head .round {
   width: 4.5vw;
   height: 55%;
-}
+} */
 
 .technologies {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   justify-content: space-between;
   flex-wrap: wrap;
   padding-top: 1rem;
@@ -167,6 +169,10 @@
   flex-direction: column;
   align-items: center;
   gap: 0.5rem;
+}
+
+.tech div {
+  width: 90%;
 }
 
 .tech p {
@@ -188,4 +194,51 @@
 
 .knowledge-list .react-icons {
   font-size: 2em;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .skills-body-head div {
+    width: 30%;
+    height: 35%;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .resume-body-head div {
+    width: 30%;
+    height: 55%;
+  }
+
+  .skills-body-head div {
+    width: 30%;
+    height: 50%;
+  }
+}
+
+@media (max-width: 480px) {
+  .resume-body-head {
+    gap: 0.5rem;
+  }
+
+  .resume-body-head div {
+    width: 35%;
+  }
+
+  .skills-body-head {
+    gap: 0.5rem;
+  }
+
+  .skills-body-head div {
+    width: 35%;
+    height: 50%;
+  }
+
+  .tech div {
+    width: 60%;
+  }
+
+  .technologies {
+    gap: 0;
+    margin-left: -0.8rem;
+  }
 }

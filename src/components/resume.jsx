@@ -107,7 +107,7 @@ const Resume = () => {
             </div>
             <div className="technologies">
               <div className="tech">
-                <div style={{ width: 90 }}>
+                <div>
                   <CircularProgressbar
                     value={95}
                     text={`${95}%`}
@@ -120,7 +120,7 @@ const Resume = () => {
                 <p>HTML5 / CSS3</p>
               </div>
               <div className="tech">
-                <div style={{ width: 90 }}>
+                <div>
                   <CircularProgressbar
                     value={80}
                     text={`${80}%`}
@@ -133,7 +133,7 @@ const Resume = () => {
                 <p>React / JavaScript</p>
               </div>
               <div className="tech">
-                <div style={{ width: 90 }}>
+                <div>
                   <CircularProgressbar
                     value={65}
                     text={`${65}%`}
@@ -146,7 +146,7 @@ const Resume = () => {
                 <p>Ruby on Rails / Ruby</p>
               </div>
               <div className="tech">
-                <div style={{ width: 90 }}>
+                <div>
                   <CircularProgressbar
                     value={65}
                     text={`${65}%`}
@@ -159,7 +159,7 @@ const Resume = () => {
                 <p>PostgreSQL</p>
               </div>
               <div className="tech">
-                <div style={{ width: 90 }}>
+                <div>
                   <CircularProgressbar
                     value={45}
                     text={`${45}%`}
