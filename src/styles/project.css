@@ -39,7 +39,6 @@
   grid-template-columns: 1fr 1fr;
   width: 100%;
   padding: 1rem;
-  
 }
 
 .project-card {
@@ -98,6 +97,7 @@
   transform: translate(-50%, -50%);
   transform-style: preserve-3d;
 }
+
 .image img {
   transform: rotateX(70deg) rotateZ(-60deg) translate3d(-140px, 0px, 50px);
   box-shadow: -80px 60px 15px 5px rgba(0,0,0,0.4);
@@ -106,6 +106,7 @@
   width: 10rem;
   height: 9rem;
 }
+
 .image:hover img {
   transform: rotateX(0deg) rotateZ(0deg) translate3d(0px, 0px, 0px);
   box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);
@@ -115,4 +116,27 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .image {
+    /* width: 62%; */
+    align-self: center;
+    left: 30%;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .image {
+    width: 67%;
+    align-self: center;
+  }
 }
