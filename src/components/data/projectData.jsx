@@ -1,5 +1,8 @@
-import image1 from "../../assets/splash.jpg";
+import image1 from "../../assets/first-project.jpg";
+import image2 from "../../assets/second-project.jpg";
+import image3 from "../../assets/third-project.jpg";
 import image4 from "../../assets/fourth-project.jpg";
+import image5 from "../../assets/splash.jpg";
 import image6 from "../../assets/sixth-project.jpg";
 
 const projectData = [
@@ -7,7 +10,7 @@ const projectData = [
     id: 1,
     title: "Grow Rich",
     description: "This is a Budgeting App",
-    image_url: `${image1}`,
+    image_url: `${image5}`,
     url: "https://grow-rich.onrender.com/",
     source: "https://github.com/Kwaku28/Grow-Rich",
   },
@@ -23,7 +26,7 @@ const projectData = [
     id: 3,
     title: "Bookstore",
     description: "Keep track of your reading progress",
-    image_url: "https://via.placeholder.com/150",
+    image_url: `${image3}`,
     url: "https://bookstore-7igy.onrender.com/",
     source: "https://github.com/Kwaku28/Bookstore",
   },
@@ -31,7 +34,7 @@ const projectData = [
     id: 4,
     title: "Leaderboard",
     description: "Keep track of your scores",
-    image_url: "https://via.placeholder.com/150",
+    image_url: `${image2}`,
     url: "https://kwaku28.github.io/leaderboard/dist/",
     source: "https://github.com/Kwaku28/leaderboard",
   },
@@ -39,7 +42,7 @@ const projectData = [
     id: 5,
     title: "Architectural Summit",
     description: "A sample website of a summit",
-    image_url: "https://via.placeholder.com/150",
+    image_url: `${image1}`,
     url: "https://kwaku28.github.io/architectural-summit/",
     source: "https://github.com/Kwaku28/architectural-summit",
   },
