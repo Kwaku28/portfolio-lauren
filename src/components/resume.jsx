@@ -156,7 +156,7 @@ const Resume = () => {
                     })}
                   />
                 </div>
-                <p>PostgreSQL</p>
+                <p>PostgreSQL / MongoDB</p>
               </div>
               <div className="tech">
                 <div>

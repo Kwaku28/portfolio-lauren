@@ -33,7 +33,7 @@ const About = () => {
           <span>A</span>bout Me
         </h2>
         <p className="about-profile">
-          <b>Hello! My name is Lawrence Amofo</b> <br />
+          <b>Hello! My name is Lawrence Amoafo</b> <br />
           A full stack developer with the expertise of implementing visually
           appealing and responsive web interfaces while also implementing robust
           back-end functionalities.
