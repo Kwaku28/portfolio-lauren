@@ -70,6 +70,10 @@ canvas {
   font-size: 2em;
 }
 
+.react {
+  margin-bottom: 0.7rem;
+}
+
 .profile {
   position: absolute;
   top: 2rem;
