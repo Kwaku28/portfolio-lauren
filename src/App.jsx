@@ -5,6 +5,8 @@ import Contact from "./components/contact";
 import About from "./components/about";
 import Resume from "./components/resume";
 import AnimateCursor from "./components/animatedCursor";
+import { IconContext } from "react-icons";
+import { RiTwitterXFill } from "react-icons/ri";
 import "./styles/App.css";
 
 function App() {
@@ -201,7 +203,7 @@ function App() {
       <div className="profile">
         <video src={video} autoPlay loop muted />
         <div className="profile-intro">
-          <img src="/lauren.png" alt="logo" className="logo" />
+          <img src="/Image.jpeg" alt="logo" className="logo" />
           <div className="intro">
             <h1>Lawrence Amoafo</h1>
             <h2>
@@ -228,13 +230,16 @@ function App() {
               </a>
             </li>
             <li>
-              <a
-                href="https://twitter.com/lawrence_amoafo"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <ion-icon name="logo-twitter"></ion-icon>
-              </a>
+              {/* <ion-icon name="logo-twitter"></ion-icon> */}
+              <IconContext.Provider value={{ className: "react" }}>
+                <a
+                  href="https://twitter.com/lawrence_amoafo"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <RiTwitterXFill />
+                </a>
+              </IconContext.Provider>
             </li>
             <li>
               <a
