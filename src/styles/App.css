@@ -329,6 +329,10 @@ video {
 }
 
 @media (max-width: 480px) {
+  canvas {
+    display: none;
+  }
+
   .navbar {
     top: 5.4rem;
     left: 0;
