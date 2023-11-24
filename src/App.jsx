@@ -203,7 +203,7 @@ function App() {
       <div className="profile">
         <video src={video} autoPlay loop muted />
         <div className="profile-intro">
-          <img src="/Image.jpeg" alt="logo" className="logo" />
+          <img src="/Profile.jpeg" alt="logo" className="logo" />
           <div className="intro">
             <h1>Lawrence Amoafo</h1>
             <h2>
