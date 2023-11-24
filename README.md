@@ -117,8 +117,7 @@ See the section about [running tests](https://classic.yarnpkg.com/en/docs/cli/te
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Styling]**
-- [ ] **[Full website]**
+- [ ] **[Optimization]**
 
 <!-- CONTRIBUTING -->
 
