@@ -23,13 +23,11 @@
   - [Usage](#usage)
   - [Run tests](#run-tests)
   - [Deployment](#triangular_flag_on_post-deployment)
-- [💻 Rails API](#rails-api)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
 <!-- PROJECT DESCRIPTION -->
@@ -104,7 +102,7 @@ See the section about [running tests](https://classic.yarnpkg.com/en/docs/cli/te
 
 <!-- AUTHORS -->
 
-## 👥 Authors <a name="lawrence"></a>
+## 👥 Authors <a name="authors"></a>
 
 👤 **Lawrence Amoafo**
 
